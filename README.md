@@ -3,7 +3,7 @@
 This repo contains cfg files for the following applications:
 
 - bash
-- zsh
+- zsh / oh-my-zsh
 - tmux
 - vim
 - git
