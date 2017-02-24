@@ -1,0 +1,44 @@
+[user]
+	email = budmonde@gmail.com
+	name = Budmonde Duinkharjav
+[push]
+	default = simple
+[core]
+	editor = vim
+[alias]
+  cc = clone
+
+	fe = push
+	ff = pull
+
+  a = add
+	ap = add -p
+	ci = commit -m "WIP"
+	cim = commit -m
+
+  sfe = stash -u
+  sff = stash pop
+  sls = stash list
+  sst = stash show
+  scl = stash clear
+
+  st = status
+  d = diff
+
+  whyignore = check-ignore -v
+
+  co = checkout
+  cob = checkout -b
+
+  br = branch
+  bd = branch -d
+
+	gr = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+
+	cfg = config --global -e
+	cfgl = config -e
+	
+[credential]
+	helper = cache
+[branch]
+	autosetuprebase = always
