@@ -11,11 +11,21 @@ alias lsz="ls -la --block-size=M"
 alias ks="ls"
 alias sl="ls"
 
+# tmux
+alias ta='tmux attach -t'
+alias tls='tmux ls'
+alias tkill='tmux kill-session-t'
+
 # misc
+alias chrome="google-chrome"
 alias cl="clear"
 alias g="git"
 alias v="vim -p"
 alias frm="sudo rm -rf"
+
+# very specific aliases
+alias ath='mosh --server="athrun mosh_project mosh-server" --ssh="ssh -X -K -t" mint-square.dialup.mit.edu tmux a'
+alias vm='kvm -m 512 -net nic -net user,hostfwd=tcp:127.0.0.1:2222-:22,hostfwd=tcp:127.0.0.1:8080-:8080 vm-6858.vmdk'
 
 # custom functions
 
@@ -31,8 +41,3 @@ search() {
   find . ${2:+-name "$2"} -type f -print0 | xargs -0 grep "$1";
 }
 
-alias ath='mosh --server="athrun mosh_project mosh-server" --ssh="ssh -X -K -t" mint-square.dialup.mit.edu tmux a'
-
-alias ta='tmux attach -t'
-alias tls='tmux ls'
-alias tkill='tmux kill-session-t'
