@@ -25,7 +25,9 @@ alias frm="sudo rm -rf"
 
 # very specific aliases
 alias ath='mosh --server="athrun mosh_project mosh-server" --ssh="ssh -X -K -t" mint-square.dialup.mit.edu tmux a'
-alias vm='kvm -m 512 -net nic -net user,hostfwd=tcp:127.0.0.1:2222-:22,hostfwd=tcp:127.0.0.1:8080-:8080 vm-6858.vmdk'
+alias vm='cd ~/vm-6858; kvm -m 512 -net nic -net user,hostfwd=tcp:127.0.0.1:2222-:22,hostfwd=tcp:127.0.0.1:8080-:8080 vm-6858.vmdk &'
+alias vmc='ssh -p 2222 httpd@localhost'
+alias vmm='ssh -p 2222 -t httpd@localhost tmux a'
 
 # custom functions
 
