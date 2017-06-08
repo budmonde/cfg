@@ -7,3 +7,5 @@ setopt CORRECT
 source ~/.oh-my-zsh/lib/alias.zsh
 source ~/.shell_prompt.sh
 
+
+export PATH="$HOME/.yarn/bin:$PATH"
